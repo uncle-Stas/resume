@@ -1,0 +1,10 @@
+.secondary-title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 27px;
+  margin-bottom: 10px;
+
+  &_black {
+    color: var(--text-title-color);
+  }
+}

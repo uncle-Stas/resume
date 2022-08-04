@@ -1,0 +1,82 @@
+.right-section {
+  padding: 35px;
+  background-color: var(--section2-color);
+
+  @media screen and (min-width: 1200px) {
+    padding-left: 80px;
+    width: 100%;
+  }
+}
+
+.right-section__title {
+  margin-top: 65px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 46px;
+  margin-bottom: 40px;
+  color: var(--text-title-color);
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.about-me {
+  margin-bottom: 40px;
+  max-width: 550px;
+}
+
+.my-projects__list {
+  padding-left: 18px;
+  margin-bottom: 40px;
+}
+
+.my-projects__item {
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
+
+  &::marker {
+    color: var(--text-title-color);
+    font-weight: 700;
+  }
+}
+
+.my-projects__link {
+  font-weight: 700;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.subtitle {
+  max-width: 500px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--text-title-color);
+
+  &_accent {
+    color: var(--accent-color);
+  }
+}
+
+.calendar {
+  font-size: 12px;
+  font-weight: 400;
+  color: #a8a8a8;
+  line-height: 15px;
+  margin: 0 0 10px 0;
+
+  &__breker {
+    color: black;
+    margin: 0 5px 0 5px;
+  }
+}
+
+.achievements {
+  margin-bottom: 40px;
+  max-width: 550px;
+}

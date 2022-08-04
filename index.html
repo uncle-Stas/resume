@@ -9,170 +9,184 @@
       href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:wght@400;700&family=Noto+Serif:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!--Главный раздел-->
-    <div class="main-container">
-      <!--главный раздел правая часть-->
-      <div class="right-side">
-        <!--Раздел про меня-->
-        <div class="about-me-section">
-          <h1 class="about-me-name">Станислав Завадский</h1>
-
-          <p class="about-me-text">
-            Я профессиональный спортсмен - баскетболист. За свою спортивную карьеру, играл за многие
-            клубы Украины и других стран. Благодаря этому дисциплинирован, умею работать в
-            коллективе и быстро ориентироваться в сложившейся ситуации. В связи с завершением
-            карьеры спортсмена решил освоить профессию FULLSTACK DEV.
-          </p>
-        </div>
-
-        <!--Раздел мои проэкты-->
-        <div class="my-projects-section">
-          <h3 class="projects-title">Мои работы</h3>
-
-          <ol class="my-projects-list">
-            <li class="my-project-list-item">
+    <div class="container">
+      <section class="left-section">
+        <img class="foto" src="./img/main-foto.jpg" alt="" />
+        <div class="left-section__text-wrapper">
+          <h1 class="left-section__title">Станислав Завадский</h1>
+          <h2 class="secondary-title">Контакты</h2>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <a href="tel:+380632632920" class="contacts__link">
+                <svg class="contacts-icon" width="24" height="24">
+                  <use href="./img/contacts-icon.svg#icon-phone"></use>
+                </svg>
+                +380 63 263 29 20</a
+              >
+            </li>
+            <li class="contacts__item">
+              <a href="mailto:stanislav.zavadskyi11@gmail.com" class="contacts__link">
+                <svg class="contacts-icon" width="24" height="24">
+                  <use href="./img/contacts-icon.svg#icon-mail"></use>
+                </svg>
+                stanislav.zavadskyi11@gmail.com</a
+              >
+            </li>
+            <li class="contacts__item">
               <a
-                href="https://heroesukraine.com/"
-                class="my-projects-link"
+                class="social-network__link"
+                href="https://www.facebook.com/profile.php?id=100008198832489"
                 rel="noopener noreferrer nofollow"
                 target="_blank"
               >
-                https://heroesukraine.com/</a
-              >
-            </li>
-            <li class="my-project-list-item">
+                <svg class="social-network__icon" width="30" height="30">
+                  <use href="./img/social-network-icon.svg#icon-facebook"></use>
+                </svg>
+              </a>
               <a
-                href="https://uncle-stas.github.io/goit-js-hw-09/"
-                class="my-projects-link"
+                class="social-network__link"
+                href="https://www.linkedin.com/in/stanislav-zavadskyi-83a121241/"
                 rel="noopener noreferrer nofollow"
                 target="_blank"
               >
-                https://uncle-stas.github.io/goit-js-hw-09/</a
-              >
-            </li>
-            <li class="my-project-list-item">
+                <svg class="social-network__icon" width="30" height="30">
+                  <use href="./img/social-network-icon.svg#icon-linkedin"></use>
+                </svg>
+              </a>
               <a
-                href="https://uncle-stas.github.io/barbershop/"
-                class="my-projects-link"
+                class="social-network__link"
+                href="https://github.com/uncle-Stas"
                 rel="noopener noreferrer nofollow"
                 target="_blank"
               >
-                https://uncle-stas.github.io/barbershop/</a
-              >
+                <svg class="social-network__icon" width="30" height="30">
+                  <use href="./img/social-network-icon.svg#icon-github"></use>
+                </svg>
+              </a>
             </li>
-            <li class="my-project-list-item">
-              <a
-                href="https://uncle-stas.github.io/goit-markup-hw-08/"
-                class="my-projects-link"
-                rel="noopener noreferrer nofollow"
-                target="_blank"
-              >
-                https://uncle-stas.github.io/goit-markup-hw-08/</a
-              >
-            </li>
-            <li class="my-project-list-item">
-              <a
-                href="https://uncle-stas.github.io/goit-team-project-hell-en/"
-                class="my-projects-link"
-                rel="noopener noreferrer nofollow"
-                target="_blank"
-              >
-                https://uncle-stas.github.io/goit-team-project-hell-en/</a
-              >
-            </li>
-          </ol>
-        </div>
+          </ul>
 
-        <!--раздел опыт работы-->
-        <div class="experience-work-section">
-          <h3 class="experience-title">Опыт работы</h3>
+          <!--Раздел Tech Skills-->
+          <h2 class="secondary-title">Tech Skills</h2>
+          <ul class="tech-skills__list">
+            <li class="skills__item">HTML5</li>
+            <li class="skills__item">CSS3</li>
+            <li class="skills__item">SASS</li>
+            <li class="skills__item">GIT</li>
+            <li class="skills__item">WebPack</li>
+            <li class="skills__item">JavaScript</li>
+            <li class="skills__item">React.js</li>
+            <li class="skills__item">Node.js</li>
+          </ul>
 
-          <!--Компания 3-->
-          <div class="experience-block">
-            <h4 class="experience-title-data">
-              Профессиональный спортсмен <span class="orange">Баскетболист</span>
-            </h4>
-            <p class="calendar">Июль 2005-2022 <span class="calendar-breker">|</span> Украина</p>
-
-            <ul class="experience-list">
-              <li>
-                Чемпион Украины 2017, Серебряный призер чемпионата Украины 2014, Бронзовый призер
-                чемпионата Украина 2008, 2009.
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!--Раздел образование-->
-        <div class="education-section">
-          <h3 class="education-title">Образование</h3>
-          <h4 class="education-title-data">
-            <span class="orange">Онлайн курсы GoIT</span>
-          </h4>
-          <h4 class="education-title-data">Full Stack Developer</h4>
-          <p class="calendar">
-            февраль 2022 - декабрь 2022<span class="calendar-breker">|</span> Украина
-          </p>
-          <br />
-          <h4 class="education-title-data">
-            <span class="orange"
-              >Южноукраинский национальный педагогический университет им. К.Д. Ушинского</span
-            >
-          </h4>
-          <h4 class="education-title-data">Преподаватель физического воспитания</h4>
-          <p class="calendar">
-            Сентябрь 2007 - июнь 2012 <span class="calendar-breker">|</span> Украина
-          </p>
-        </div>
-      </div>
-
-      <!--Главный раздел левая часть-->
-      <aside class="left-side">
-        <img src="img/main foto.jpg" alt="Мое фото" width="370px" />
-
-        <!--Раздел контакты-->
-        <div class="contacts">
-          <h3 class="left-side-titls">Контакты</h3>
-          <div>
-            <span class="t-e-contacts">Т:</span>
-            <a class="t-e-contacts-data" href="tel:+380632632920">+380 63 263 29 20</a>
-          </div>
-          <div>
-            <span class="t-e-contacts">E:</span>
-            <a class="t-e-contacts-data" href="mailto:stanislav.zavadskyi11@gmail.com"
-              >stanislav.zavadskyi11@gmail.com</a
-            >
-          </div>
-        </div>
-
-        <!--Раздел Tech Skills-->
-        <div class="tech-skills">
-          <h3 class="left-side-titls">Tech Skills</h3>
-          <ul class="tech-soft-skills-list">
-            <li><span class="tech-soft-skills-list-data">HTML5</span></li>
-            <li><span class="tech-soft-skills-list-data">CSS3</span></li>
-            <li><span class="tech-soft-skills-list-data">GIT</span></li>
-            <li><span class="tech-soft-skills-list-data">WebPack</span></li>
-            <li><span class="tech-soft-skills-list-data">JavaScript</span></li>
-            <li><span class="tech-soft-skills-list-data">React.js</span></li>
-            <li><span class="tech-soft-skills-list-data">Node.js</span></li>
+          <!--Раздел Soft Skills-->
+          <h2 class="secondary-title">Soft Skills</h2>
+          <ul class="soft-skills__list">
+            <li class="skills__item">Scrum</li>
+            <li class="skills__item">Agile</li>
+            <li class="skills__item">GTD</li>
+            <li class="skills__item">Teamwork</li>
           </ul>
         </div>
-
-        <!--Раздел Soft Skills-->
-        <div class="soft-skills">
-          <h3 class="left-side-titls">Soft Skills</h3>
-          <ul class="tech-soft-skills-list">
-            <li><span class="tech-soft-skills-list-data">Scrum</span></li>
-            <li><span class="tech-soft-skills-list-data">Agile</span></li>
-            <li><span class="tech-soft-skills-list-data">GTD</span></li>
-            <li><span class="tech-soft-skills-list-data">Teamwork</span></li>
-          </ul>
+      </section>
+      <section class="right-section">
+        <h1 class="right-section__title">Станислав Завадский</h1>
+        <p class="about-me">
+          Я профессиональный спортсмен - баскетболист. За свою спортивную карьеру, играл за многие
+          клубы Украины и других стран. Благодаря этому дисциплинирован, умею работать в коллективе
+          и быстро ориентироваться в сложившейся ситуации. В связи с завершением карьеры спортсмена
+          решил освоить профессию FULLSTACK DEV.
+        </p>
+        <h2 class="secondary-title secondary-title_black">Мои работы</h2>
+        <ol class="my-projects__list">
+          <li class="my-projects__item">
+            <a
+              href="https://heroesukraine.com/"
+              class="my-projects__link"
+              rel="noopener noreferrer nofollow"
+              target="_blank"
+            >
+              https://heroesukraine.com/</a
+            >
+          </li>
+          <li class="my-projects__item">
+            <a
+              href="https://uncle-stas.github.io/goit-js-hw-09/"
+              class="my-projects__link"
+              rel="noopener noreferrer nofollow"
+              target="_blank"
+            >
+              https://uncle-stas.github.io/goit-js-hw-09/</a
+            >
+          </li>
+          <li class="my-projects__item">
+            <a
+              href="https://uncle-stas.github.io/barbershop/"
+              class="my-projects__link"
+              rel="noopener noreferrer nofollow"
+              target="_blank"
+            >
+              https://uncle-stas.github.io/barbershop/</a
+            >
+          </li>
+          <li class="my-projects__item">
+            <a
+              href="https://uncle-stas.github.io/goit-markup-hw-08/"
+              class="my-projects__link"
+              rel="noopener noreferrer nofollow"
+              target="_blank"
+            >
+              https://uncle-stas.github.io/goit-markup-hw-08/</a
+            >
+          </li>
+          <li class="my-projects__item">
+            <a
+              href="https://uncle-stas.github.io/goit-team-project-hell-en/"
+              class="my-projects__link"
+              rel="noopener noreferrer nofollow"
+              target="_blank"
+            >
+              https://uncle-stas.github.io/goit-team-project-hell-en/</a
+            >
+          </li>
+        </ol>
+        <h2 class="secondary-title secondary-title_black">Опыт работы</h2>
+        <p class="subtitle">
+          Профессиональный спортсмен <span class="subtitle_accent">Баскетболист</span>
+        </p>
+        <p class="calendar">2005 - Февраль 2022 <span class="calendar__breker">|</span> Украина</p>
+        <p class="achievements">
+          Чемпион Украины 2017, Серебряный призер чемпионата Украины 2014, Бронзовый призер
+          чемпионата Украина 2008, 2009.
+        </p>
+         <h2 class="secondary-title secondary-title_black">Образование</h2>
+          <p class="subtitle subtitle_accent">
+            Онлайн курсы GoIT
+          </p>
+          <p class="subtitle">Full Stack Developer</p>
+          <p class="calendar">
+            февраль 2022 - декабрь 2022<span class="calendar__breker">|</span> Украина
+          </p>
+          <br>
+          <p class="subtitle subtitle_accent">
+              Южноукраинский национальный педагогический университет им. К.Д. Ушинского
+          </p>
+          <p class="subtitle">Преподаватель физического воспитания</p>
+          <p class="calendar">
+            Сентябрь 2007 - июнь 2012 <span class="calendar__breker">|</span> Украина
+          </p>
         </div>
-      </aside>
+      </section>
     </div>
   </body>
 </html>
